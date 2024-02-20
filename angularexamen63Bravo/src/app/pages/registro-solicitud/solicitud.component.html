@@ -27,12 +27,27 @@
     </form>
   </div>
 
-<div>
-  <h2>Lista de Cuotas</h2>
-  <ul>
-    <li *ngFor="let cuota of cuotas">
-      ID: {{cuota.id}}, Cuota Capital: {{ cuota.cuotaCapital }}, Cuota Interes: {{ cuota.cuotaInteres}}, Cuota Total: {{cuota.cuotaTotal}}
-      <!-- Utiliza otros campos de tu objeto Cuota según sea necesario -->
-    </li>
-  </ul>
-</div>
+  <div>
+    <h2>Lista de Cuotas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cuota Capital</th>
+          <th>Cuota Interés</th>
+          <th>Cuota Total</th>
+          <!-- Agrega más encabezados de columna según sea necesario -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cuota of cuotas">
+          <td>{{ cuota.id }}</td>
+          <td>{{ cuota.cuotaCapital }}</td>
+          <td>{{ cuota.cuotaInteres }}</td>
+          <td>{{ cuota.cuotaTotal }}</td>
+          <!-- Utiliza otros campos de tu objeto Cuota según sea necesario -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

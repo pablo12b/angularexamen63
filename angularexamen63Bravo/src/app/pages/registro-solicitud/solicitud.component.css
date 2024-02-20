@@ -7,32 +7,36 @@ div {
     border-radius: 5px;
     background-color: #f9f9f9;
   }
-  
-  /* Estilo para el encabezado de la lista */
-  h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo para la lista */
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Estilo para cada ítem de la lista */
-  li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  /* Estilo para destacar las partes importantes de cada ítem */
-  li span {
-    font-weight: bold;
-  }
+
+/* Estilos generales para la tabla */
+table {
+  width: 100%; /* Ajusta la tabla al ancho del contenedor */
+  border-collapse: collapse; /* Elimina el espacio entre los bordes de las celdas */
+  margin-top: 20px; /* Espacio arriba de la tabla */
+}
+
+/* Estilos para los encabezados de la tabla */
+th {
+  background-color: #007bff; /* Color de fondo para los encabezados */
+  color: white; /* Color del texto para los encabezados */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 10px; /* Espaciado interior para los encabezados */
+}
+
+/* Estilos para las celdas de datos de la tabla */
+td {
+  border: 1px solid #dddddd; /* Borde de las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 8px; /* Espaciado interior para las celdas */
+}
+
+/* Estilos para las filas de datos al pasar el ratón por encima */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo para las filas pares */
+}
+
+tr:hover {
+  background-color: #ddd; /* Color de fondo al pasar el ratón por encima */
+}
+
   

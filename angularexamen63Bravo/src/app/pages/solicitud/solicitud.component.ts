@@ -27,14 +27,14 @@ export class SolicitudComponent {
     if (this.signUpForm.valid) {
       const solicitud: Solicitud = this.signUpForm.value;
       this.solicitudServices.agregarSolicitud(solicitud).subscribe(
-        response => {
-          console.log('Registro exitoso', response);
-          this.cuotas = response;
-          alert('Registro exitoso')
+        (cuotas: Cuota[]) => { // Ajusta el tipo de respuesta esperada a Cuota[]
+          this.cuotas = cuotas;
+          console.log('Registro exitoso', cuotas);
+          // Aquí puedes hacer algo con la lista de cuotas, como mostrarla en la UI
         },
         error => {
           console.error('Error al registrar el cliente', error);
-          // Aquí puedes manejar errores, como mostrar un mensaje al usuario
+          // Aquí manejas errores, como mostrar un mensaje al usuario
         }
       );
     }

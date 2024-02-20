@@ -27,13 +27,12 @@
     </form>
   </div>
 
-  <div *ngIf="cuotas.length > 0">
-    <h2>Lista de Cuotas</h2>
-    <ul>
-      <li *ngFor="let cuota of cuotas">
-        Monto: {{ cuota.cuotaCapital }}
-        <!-- Utiliza otros campos de tu objeto Cuota según sea necesario -->
-      </li>
-    </ul>
-  </div>
-  
+  <div>
+  <h2>Lista de Cuotas</h2>
+  <ul>
+    <li *ngFor="let cuota of cuotas">
+      ID: {{cuota.id}}, Cuota Capital: {{ cuota.cuotaCapital }}, Cuota Interes: {{ cuota.cuotaInteres}}, Cuota Total: {{cuota.cuotaTotal}}
+      <!-- Utiliza otros campos de tu objeto Cuota según sea necesario -->
+    </li>
+  </ul>
+</div>

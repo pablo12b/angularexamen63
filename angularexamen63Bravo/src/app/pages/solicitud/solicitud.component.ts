@@ -11,6 +11,7 @@ import { SolicitudService } from 'src/app/services/solicitud.service';
 })
 export class SolicitudComponent {
   signUpForm: FormGroup;
+  cuotas: Cuota[] = [];
 
   constructor(private formBuilder: FormBuilder, private solicitudServices: SolicitudService){
     this.signUpForm = this.formBuilder.group({
@@ -28,6 +29,7 @@ export class SolicitudComponent {
       this.solicitudServices.agregarSolicitud(solicitud).subscribe(
         response => {
           console.log('Registro exitoso', response);
+          this.cuotas = response;
           alert('Registro exitoso')
         },
         error => {

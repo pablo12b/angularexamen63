@@ -11,7 +11,7 @@ export class SolicitudService {
   constructor(private http: HttpClient) { }
 
   agregarSolicitud(solicitud: Solicitud){
-    let url = `${environment.WS_PATH}/solicitud/`;
+    let url = `${environment.WS_PATH}/solicitud/agregar/`;
     return this.http.post<any>(url,solicitud);
   }
 

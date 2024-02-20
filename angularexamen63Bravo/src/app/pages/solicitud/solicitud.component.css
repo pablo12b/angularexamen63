@@ -1,0 +1,38 @@
+/* Estilo para el contenedor principal */
+div {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para el encabezado de la lista */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para la lista */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilo para cada ítem de la lista */
+  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Estilo para destacar las partes importantes de cada ítem */
+  li span {
+    font-weight: bold;
+  }
+  
